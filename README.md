@@ -2,18 +2,18 @@
 
 ## Example of estimating PI using dotnet core 3.1 and Visual Studio 2019 preview
 
-##How to use##
+## How to use##
 
 Clone the project to your C:\
 
-###It will create C:\B\EstimatePI\EstimatePI
+### It will create C:\B\EstimatePI\EstimatePI
    Dotnet core 3.1 dll use to generate random x and y and calculate distance
    if distance is less than 1 than point is within the circle
    
-###It will create C:\B\EstimatePI\EstimatePI.Tests
+### It will create C:\B\EstimatePI\EstimatePI.Tests
    Dotnet core 3.1 testing using xunit... not done yet
    
-###It will create C:\B\EstimatePI\EstimatePIConsole
+### It will create C:\B\EstimatePI\EstimatePIConsole
    Dotnet core 3.1 console application to estimate PI
    This app can run up to 100 C:\B\EstimatePI\EstimatePIPartConsole at the same time
    Running this app using
@@ -25,7 +25,7 @@ Clone the project to your C:\
      At the end the app reads all these temp file to gather all the partial results and combine/add them 
      into a new file called C:\EstimatePI\EstimatedPIResults.csv while deleting all the temp file not used anymore
    
-###It will create C:\B\EstimatePI\EstimatePIPartConsole
+### It will create C:\B\EstimatePI\EstimatePIPartConsole
    Dotnet core 3.1 console application to estimate PI
    Running this app using 
       EstimatePIPartConsole 123456789 1000000 1
@@ -35,8 +35,9 @@ Clone the project to your C:\
       would run the EstimatePI function with 1000000 darts and will created a temp file called C:\EstimatePI\EstimatedPI_1.csv
       the first arg is just in case one would want to have a SecurityCode to run the app
       
-###It will create C:\B\EstimatePI\EstimatePIWindow
+### It will create C:\B\EstimatePI\EstimatePIWindow
    Dotnet core 3.1 windows application to estimate PI
    Running this app will show some parameters you can set as well as a button "Start Estimating PI"
    Clicking on the "Start Estimating PI" will automatically run C:\B\EstimatePI\EstimatePIConsole\bin\Debug\netcoreapp3.1\EstimatePIConsole.exe with WindowStyle Hidden and NoCreateWindow set
+   
    
