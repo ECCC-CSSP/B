@@ -71,18 +71,6 @@ namespace EstimatePI
         #endregion Public Functions
 
         #region Private Functions
-        private bool IsInCircle(double x, double y)
-        {
-            double dist = Math.Sqrt(x * x + y * y);
-            if (dist > 1.0D)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
         private string ClearDirectory()
         {
             StatusTempEvent(new StatusEventArgs($"Clearing up directory [{TempDirPath}]"));
@@ -134,6 +122,18 @@ namespace EstimatePI
             estimatedPIResult.EstimatedPI = 4.0D * (double)InCircle / (double)Count;
 
             return estimatedPIResult;
+        }
+        private bool IsInCircle(double x, double y)
+        {
+            double dist = Math.Sqrt(x * x + y * y);
+            if (dist > 1.0D)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
         private string Setup()
         {
