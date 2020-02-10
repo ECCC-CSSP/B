@@ -8,7 +8,7 @@ Clone the project to your C:\
 
 ### Note
 #### To do --- Properly test the apps using C:\B\EstimatePI\EstimatePI.Tests and other test projects not yet created
-#### When using Number of Darts bigger than int max then there is an error showing up. To solve this we would just need to change the int to long to declare the NumberOfDart or DartCount variable
+#### When using Number of Darts bigger than int max (2,147,483,647) generate an error. To solve this we would just need to change the int to long to declare the NumberOfDart or DartCount variable
 
 ### It will create C:\B\EstimatePI\EstimatePI
    Dotnet core 3.1 dll use to generate random x and y and calculate distance
