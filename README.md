@@ -2,7 +2,7 @@
 
 ## Example of estimating PI using dotnet core 3.1 and Visual Studio 2019 preview
 
-##How to use
+##How to use##
 
 Clone the project to your C:\
 
