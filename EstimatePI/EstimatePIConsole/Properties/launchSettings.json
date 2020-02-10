@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EstimatePIConsole": {
+      "commandName": "Project",
+      "commandLineArgs": " 1000000000 100"
+    }
+  }
+}

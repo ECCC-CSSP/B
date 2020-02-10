@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EstimatePIPartConsole": {
+      "commandName": "Project",
+      "commandLineArgs": "123456789 1000 1"
+    }
+  }
+}

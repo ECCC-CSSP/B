@@ -11,7 +11,6 @@ namespace EstimatePI
         #region Properties
         public string TempDirPath { get; set; } = @"C:\EstimatePI\";
         public string ResultFileName { get; set; } = @"";
-        public TimeSpan timeSpan { get; set; } = new TimeSpan();
         public int DartCount { get; set; } = 1000;
         #endregion Properties
 
@@ -36,14 +35,12 @@ namespace EstimatePI
 
             FileInfo fi = new FileInfo($"{TempDirPath}{ResultFileName}");
 
-            timeSpan = new TimeSpan(EndTime.Ticks - StartTime.Ticks);
+            TimeSpan timeSpan = new TimeSpan(EndTime.Ticks - StartTime.Ticks);
 
             StreamWriter sw = fi.CreateText();
             sw.WriteLine($"Count,InCircle,PI,Seconds");
             sw.WriteLine($"{estimatedPIResult.Count},{estimatedPIResult.InCircle},{estimatedPIResult.EstimatedPI},{timeSpan.Seconds}");
             sw.Close();
-
-
         }
         #endregion Constructors
 
@@ -178,9 +175,6 @@ namespace EstimatePI
             return ""; // everything ok, return empty string otherwise return error message
         }
         #endregion Private Functions
-
-
-
     }
 
     #region Sub Classes
@@ -189,6 +183,7 @@ namespace EstimatePI
         public int Count { get; set; }
         public int InCircle { get; set; }
         public double EstimatedPI { get; set; }
+        public int Seconds { get; set; }
     }
     public class ErrorEventArgs : EventArgs
     {
