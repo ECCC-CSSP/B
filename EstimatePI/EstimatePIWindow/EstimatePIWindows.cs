@@ -161,6 +161,7 @@ namespace EstimatePIWindow
                 string FirstLineRead = sr.ReadLine();
                 if (FirstLineRead != FirstLine)
                 {
+                    sr.Close();
                     return $"First line of file [{fi.FullName}] is not equal to [{FirstLine}]";
                 }
                 string SecondLineRead = sr.ReadLine();

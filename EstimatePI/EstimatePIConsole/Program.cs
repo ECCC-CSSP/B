@@ -135,7 +135,7 @@ namespace EstimatePIConsole
 
             if (!di.Exists)
             {
-                return $@"Could not find director [{di.FullName}]";
+                return $@"Could not find directory [{di.FullName}]";
             }
 
             List<FileInfo> fiList = di.GetFiles().Where(c => c.Name.StartsWith("EstimatePIResult_")).ToList();
