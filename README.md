@@ -45,3 +45,8 @@ Clone the project to your C:\
    Clicking on the "Start Estimating PI" will automatically run C:\B\EstimatePI\EstimatePIConsole\bin\Debug\netcoreapp3.1\EstimatePIConsole.exe with WindowStyle Hidden and NoCreateWindow set
    
    
+### For beginners (Please use Visual Studio 2019 preview).
+   To run the C:\B\EstimatePI\EstimatePIConsole project you will have to set the project as Startup Project by right clicking on the project name on your right and selecting "Set as Default Project". You will also need to set the startup parameters by Right clicking on the project and selecting "Properties" this will open Project Properties window which you will have to click on the "debug" tab and then insert your arguments within the Application Arguments textbox. Ex:  1000000000 100
+   
+   To run the windows version you will have to set the windows project as Startup Project by right clicking on the project name on your right and selecting "Set as Default Project". Then you just set the parameters using the textboxes and click on the "Start Estimating PI" button.
+   
